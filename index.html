@@ -36,40 +36,41 @@
       .ctrl button { padding: 7px 13px; font-size: 1em;}
       #lesson-nav button { padding: 8px 15px; font-size:1em;}
     }
-.home-btn {
-  position: absolute; right: 34px; top: 26px;
-  background: #fff;
-  color: #2563eb;
+.home-btn-ko {
+  position: absolute;
+  left: 26px;
+  top: 22px;
+  background: #2c3e50;
+  color: #fff;
   border: none;
-  border-radius: 999px;
-  padding: 7px 18px 7px 38px;
+  border-radius: 15px;
+  padding: 12px 22px;
+  font-size: 1.16rem;
   font-weight: bold;
-  font-size: 1.05rem;
-  box-shadow: 0 2px 6px #2563eb19;
+  box-shadow: 0 2px 8px #0001;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
-  display: flex; align-items: center; gap: 7px;
   text-decoration: none;
+  z-index: 2;
+  transition: background 0.15s, color 0.15s;
 }
-.home-btn:hover {
-  background: #dbeafe;
-  color: #1e293b;
+.home-btn-ko:hover {
+  background: #34495e;
+  color: #facc15;
 }
-.home-btn .icon {
-  position: absolute; left: 14px; font-size: 1.2em; color: #2563eb;
+.header {
+  position: relative; /* 이 줄이 반드시 필요! */
+  display: flex; justify-content: center; align-items: center;
+  /* ...기존 header 스타일 그대로 유지... */
 }
 @media (max-width:600px) {
-  .home-btn { right: 12px; top: 13px; padding: 6px 11px 6px 30px; font-size: .96em;}
-  .home-btn .icon { left: 8px; font-size: 1em;}
+  .home-btn-ko { left: 9px; top: 8px; padding: 7px 13px; font-size: .97em;}
 }
+
 
   </style>
 </head>
 <body>
-  <div class="header">교과서식 영어 문장 배열 연습
-  <a href="https://nmyway77.github.io/home2/" class="home-btn" title="홈으로 이동">
-    <span class="icon">🏠</span> Home
-  </a>
+  <div class="header">  <a href="/" class="home-btn-ko" title="홈으로 이동">홈으로</a> 교과서식 영어 문장 배열 연습
 </div>
   <!-- 과 선택 드롭다운 & 목차 -->
   <div class="lesson-select-bar">
